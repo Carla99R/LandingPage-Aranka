@@ -1,0 +1,9 @@
+.sections:focus {
+    color: #9d4edd;
+
+}
+
+.sections:hover {
+    background-color: #e5b3fe !important;
+
+}

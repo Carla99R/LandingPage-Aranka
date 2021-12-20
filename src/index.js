@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Home from './pages/App';
+import Routers from './pages/Router';
 import reportWebVitals from './reportWebVitals';
+import Contact from "./components/Contact";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <div style={{height:'100%'}}>
+        <Routers/>
+    </div>,document.getElementById('root')
+
 );
 
 // If you want to start measuring performance in your app, pass a function

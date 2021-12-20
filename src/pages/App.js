@@ -1,5 +1,7 @@
 import styles from '../styles/Home.module.css'
 import Navbar from "../components/appBar";
+import Info from "../components/Info";
+import {useState} from "react";
 
 export default function Home() {
 
@@ -159,14 +161,17 @@ gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
         mouse.y = e.clientY;
     }
 
+    const [location, setLocation] = useState('main');
+
 
     return (
-        <>
-            <div className={styles.container} id={'main'}>
-                <Navbar/>
+        <div style={{height:'100%', overflowY:'scroll', overflowX:'hidden'}}>
+            {}
+            <div className={styles.container}>
+                <Navbar />
                 <span className={styles.title}>ARANKA IMPRESORES</span>
             </div>
-        </>
+        </div>
 
 
 )

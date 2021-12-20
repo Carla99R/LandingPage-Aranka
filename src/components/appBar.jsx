@@ -27,7 +27,7 @@ const Navbar = () => {
 
 
     return (
-        <AppBar position="static" style={{backgroundColor: 'transparent', width: '100%'}}>
+        <AppBar position="static" style={{backgroundColor: 'transparent', width: '100%', position:'fixed'}}>
             <Container maxWidth="l" style={{width: '100%'}}>
                 <Toolbar disableGutters style={{width: '100%', margin: '0 15% 0 15%'}}>
                     <Box sx={{flexGrow: 1, display: {xs: 'flex', md: 'none'}}}>

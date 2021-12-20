@@ -5,7 +5,7 @@ const Info = () => {
 
 
     return (
-        <div className={styles.container}>
+        <div className={styles.info}>
             Info
         </div>
     );

@@ -1,8 +1,9 @@
 import Container from '@mui/material/Button';
 import {AppBar, Avatar, Box, IconButton, Menu, MenuItem, Toolbar, Tooltip, Typography} from "@mui/material";
 import React, {useEffect, useState} from 'react';
-import Button from "@mui/material/Button";
 import styles from '../styles/Navbar.module.css'
+import * as Scroll from 'react-scroll';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const Navbar = (props) => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -92,17 +93,16 @@ const Navbar = (props) => {
                         width: '80%'
                     }}>
                         {pages.map((page) => (
-                            <a
+                            <Link to={page.id} spy={true} smooth={true} duration={500}
                                 key={page.name}
                                 onClick={() => {
                                     handleCloseNavMenu(page.id)
                                 }}
                                 style={{my: 2, color: !props.scroll ? 'white': colors === page.id ? '#9d4edd' : 'white', display: 'block'}}
                                 className={styles.sections}
-                                href={'#' + page.id}
                             >
                                 {page.name}
-                            </a>
+                            </Link>
                         ))}
                     </Box>
                 </Toolbar>

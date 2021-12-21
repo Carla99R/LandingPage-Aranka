@@ -5,7 +5,7 @@ const Promotions = () => {
 
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id={'prom'}>
             Promotions
         </div>
     );

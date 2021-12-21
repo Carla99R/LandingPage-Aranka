@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from '../styles/Promotions.module.css'
+import styles from '../styles/Contact.module.css'
 
 const Contact = () => {
 
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id={'contact'}>
             Contact
         </div>
     );

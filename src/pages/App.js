@@ -1,9 +1,28 @@
 import styles from '../styles/Home.module.css'
 import Navbar from "../components/appBar";
 import Info from "../components/Info";
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
+import Promotions from "../components/Promotions";
+import Contact from "../components/Contact";
+import Location from "../components/Location";
 
 export default function Home() {
+    let listener = null
+    const [scrollState, setScrollState] = useState(false)
+
+    useEffect(() => {
+        listener = document.addEventListener("scroll", e => {
+            let scrolled = document.scrollingElement.scrollTop
+            if (scrolled >= 1) {
+                setScrollState(true)
+            } else {
+                setScrollState(false)
+            }
+        })
+        return () => {
+            document.removeEventListener("scroll", listener)
+        }
+    }, [scrollState])
 
     useEffect(() => {
         fondo()
@@ -14,14 +33,8 @@ export default function Home() {
         console.log(canvas)
         let width = canvas.width = window.innerWidth;
         let height = canvas.height = window.innerHeight;
-        let para = document.createElement("P");
-        // let t = document.createTextNode("ARANKA IMPRESORES");
-        // para.appendChild(t);
-        // document.body.appendChild(canvas);
         let segundo_p = document.getElementById('root').getElementsByTagName('div')[0];
         document.getElementById("root").insertBefore(canvas, segundo_p);
-        canvas.appendChild(para)
-
         let gl = canvas.getContext('webgl');
 
         let mouse = {x: 0, y: 0};
@@ -179,11 +192,16 @@ gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
 
 
     return (
-
-        <div className={styles.container}>
-            <Navbar/>
-            <span className={styles.title}>ARANKA IMPRESORES</span>
-        </div>
+        <>
+            <div className={styles.container}>
+                <Navbar scroll={scrollState}/>
+                <span className={styles.title}>ARANKA IMPRESORES</span>
+            </div>
+            <Promotions/>
+            <Info/>
+            <Contact/>
+            <Location/>
+        </>
 
 
     )

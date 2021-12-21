@@ -8,10 +8,9 @@ import Home from "./pages/App";
 import Info from "./components/Info";
 
 ReactDOM.render(
-    <React.StrictMode>
+    <div style={{width:'100vw', overflowX:'hidden'}}>
         <Home/>
-        <Info/>
-    </React.StrictMode>, document.getElementById('root')
+    </div>, document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

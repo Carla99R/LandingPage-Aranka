@@ -1,9 +1,14 @@
-.sections:focus {
+.sections:active {
     color: #9d4edd;
 
 }
 
 .sections:hover {
     background-color: #e5b3fe !important;
+}
 
+.sections{
+    text-decoration: none;
+    padding: 1%;
+    border-radius: 50%;
 }

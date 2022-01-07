@@ -11,21 +11,25 @@ const Navbar = (props) => {
     const [colors, setColors] = useState(null);
     const pages = [
         {
-            name: 'Promociones',
-            id: 'prom'
-        },
-        {
-            name: 'Información',
+            name: 'Sobre Nosotros',
             id: 'info'
         },
         {
-            name: 'Contáctanos',
-            id: 'contac'
+            name: 'Servicios',
+            id: 'services'
         },
         {
             name: 'Ubicación',
             id: 'location'
-        }
+        },
+        {
+            name: 'Preguntas Frecuentes',
+            id: 'faq'
+        },
+        {
+            name: 'Contáctanos',
+            id: 'contact'
+        },
     ];
 
     const handleOpenNavMenu = (event) => {
@@ -54,13 +58,14 @@ const Navbar = (props) => {
     return (
         <AppBar position="static" style={{
             backgroundColor: props.scroll ? 'black' : 'transparent',
-            width: '100vw',
+            width: '100%',
             position: 'fixed',
-            overflowX: 'hidden'
+            overflowX: 'hidden',
+            zIndex:1
         }}>
-            <Container maxWidth="m" style={{width: '100vw'}}>
-                <Toolbar disableGutters style={{width: '80%', margin: '0 15% 0 15%'}}>
-                    <Box sx={{flexGrow: 1, display: {xs: 'flex', md: 'none'}}}>
+            <Container maxWidth="m" style={{width: '100%', display:'flex', justifyContent:'flex-end'}}>
+                <Toolbar disableGutters style={{width: '60%', display:'flex', justifyContent:'flex-end', paddingRight:'3%'}}>
+                    <Box sx={{display: {xs: 'flex', md: 'none'}}}>
                         <Menu
                             id="menu-appbar"
                             anchorEl={anchorElNav}

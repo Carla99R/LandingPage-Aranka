@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from '../styles/Location.module.css'
 
-const Location = () => {
+const Services = () => {
 
 
     return (
         <div className={styles.container}>
-            Location
+            Services
         </div>
     );
 
 }
-export default Location;
+export default Services;

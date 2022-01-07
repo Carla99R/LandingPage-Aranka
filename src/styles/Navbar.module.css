@@ -4,11 +4,10 @@
 }
 
 .sections:hover {
-    background-color: #e5b3fe !important;
+   text-decoration: underline;
 }
 
 .sections{
     text-decoration: none;
     padding: 1%;
-    border-radius: 50%;
 }

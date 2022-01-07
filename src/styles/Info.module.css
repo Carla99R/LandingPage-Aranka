@@ -1,8 +1,134 @@
-.container{
-    height: 100vh;
-    width: 100vw;
-    /*position: initial;*/
+.container {
+    height: 100%;
+    width: 100%;
     z-index: 1;
+    padding-top: 1%;
     overflow-x: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.title {
+    display: flex;
+    padding-top: 5%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+    color: whitesmoke;
+}
+
+.todo {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.segment {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    margin-top: 4%;
+}
+
+.text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 4% 0 4%;
+}
+
+.subtitle {
+    display: flex;
+    font-size: 1.5vw;
+    color: whitesmoke;
+    justify-content: center;
+}
+
+.mision {
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    text-indent: unset;
+}
+
+.about {
+    color: whitesmoke;
+    text-align: justify;
+    font-size: 1.2vw;
+}
+
+.tips {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    align-items: center;
+}
+
+.tipsDiv {
+    display: flex;
+    width: 100%;
+}
+
+.tipDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 3%;
+}
+
+.tipTitle {
+    color: whitesmoke;
+    margin: 0;
+    padding-bottom: 2%;
+    font-size: 1.1vw;
+}
+
+.tipContent {
+    color: whitesmoke;
+    font-style: italic;
+}
+
+.vision {
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    text-indent: unset;
 }

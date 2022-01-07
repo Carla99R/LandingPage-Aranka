@@ -1,0 +1,12 @@
+.contentStyle {
+    height: 70vh;
+    width: 100%;
+    color: #fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    z-index: 0;
+    overflow-x: hidden;
+
+}

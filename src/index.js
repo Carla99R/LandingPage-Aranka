@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Routers from './pages/Router';
 import reportWebVitals from './reportWebVitals';
-import Contact from "./components/Contact";
 import Home from "./pages/App";
-import Info from "./components/Info";
+import 'antd/dist/antd.css';
+
 
 ReactDOM.render(
-    <div style={{width:'100vw', overflowX:'hidden'}}>
+    <div style={{backgroundColor:"black"}}>
         <Home/>
     </div>, document.getElementById('root')
 );

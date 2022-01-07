@@ -2,9 +2,10 @@ import styles from '../styles/Home.module.css'
 import Navbar from "../components/appBar";
 import Info from "../components/Info";
 import React, {useEffect, useState} from "react";
-import Promotions from "../components/Promotions";
+import FAQ from "../components/Faq";
 import Contact from "../components/Contact";
 import Location from "../components/Location";
+import Services from "../components/Services";
 
 export default function Home() {
     let listener = null
@@ -186,22 +187,30 @@ gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
             mouse.x = e.clientX;
             mouse.y = e.clientY;
         }
-        // canvas = canvasRender;
-        // return canvasRender;
     }
 
-
     return (
-        <>
+        <div style={{backgroundColor:"black", width:'100%', height:"100%"}}>
             <div className={styles.container}>
                 <Navbar scroll={scrollState}/>
                 <span className={styles.title}>ARANKA IMPRESORES</span>
             </div>
-            <Promotions/>
-            <Info/>
-            <Contact/>
-            <Location/>
-        </>
+            <div id={'info'} style={{width:"100%"}}>
+                 <Info/>
+             </div>
+            <div id={'services'} style={{width:"100%"}}>
+                <Services/>
+            </div>
+             <div id={'location'} style={{width:"100%"}}>
+                <Location/>
+             </div>
+            <div id={'faq'} style={{width: "100%"}}>
+                <FAQ/>
+            </div>
+            <div id={'contact'} style={{width:"100%"}}>
+                <Contact/>
+            </div>
+        </div>
 
 
     )

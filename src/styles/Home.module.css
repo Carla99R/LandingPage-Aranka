@@ -1,25 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black !important;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    overflow-x: hidden;
 }
 
 .container {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    /*background-repeat: no-repeat;*/
+    height: 100%;
+    /*background-repeat: repeat;*/
 }
 
 .title {
-    width: 100vw;
+    width: 90%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -33,10 +36,9 @@
 }
 
 canvas {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    /*background-repeat: no-repeat;*/
+    width: 100% !important;
+    height: 100% !important;
+    /*background-repeat: repeat-y;*/
     /*position: absolute;*/
 }
 

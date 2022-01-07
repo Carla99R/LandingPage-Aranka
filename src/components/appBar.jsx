@@ -58,7 +58,7 @@ const Navbar = (props) => {
     return (
         <AppBar position="static" style={{
             backgroundColor: props.scroll ? 'black' : 'transparent',
-            width: '100%',
+            width: '100vw',
             position: 'fixed',
             overflowX: 'hidden',
             zIndex:1

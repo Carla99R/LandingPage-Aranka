@@ -1,22 +1,20 @@
 .container {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     z-index: 1;
-    padding-top: 1%;
     overflow-x: hidden;
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #9f9898;
 }
 
 .title {
     display: flex;
-    padding-top: 5%;
     justify-content: center;
     align-items: center;
-    font-size: 2vw;
+    font-size: 32px;
     font-weight: bold;
     font-family: 'Permanent Marker', cursive;
     color: whitesmoke;
@@ -25,6 +23,7 @@
 .todo {
     height: 70%;
     width: 90%;
+    padding-top: 8%;
     display: flex;
     justify-content: center;
 }
@@ -51,7 +50,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4%;
     margin-top: 4%;
 }
 
@@ -60,12 +58,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2% 4% 0 4%;
+    padding-top: 4%;
 }
 
 .subtitle {
     display: flex;
     font-size: 1.5vw;
+    padding-top: 5%;
     color: whitesmoke;
     justify-content: center;
 }
@@ -83,7 +82,8 @@
 .about {
     color: whitesmoke;
     text-align: justify;
-    font-size: 1.2vw;
+    font-size: 1vw;
+    font-weight: bold;
 }
 
 .tips {

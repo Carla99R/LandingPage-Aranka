@@ -61,7 +61,7 @@ const Navbar = (props) => {
             width: '100vw',
             position: 'fixed',
             overflowX: 'hidden',
-            zIndex:1
+            zIndex:2
         }}>
             <Container maxWidth="m" style={{width: '100%', display:'flex', justifyContent:'flex-end'}}>
                 <Toolbar disableGutters style={{width: '60%', display:'flex', justifyContent:'flex-end', paddingRight:'3%'}}>

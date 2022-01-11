@@ -7,7 +7,7 @@ import 'antd/dist/antd.css';
 
 
 ReactDOM.render(
-    <div style={{backgroundColor:"black"}}>
+    <div style={{backgroundColor:"whitesmoke"}}>
         <Home/>
     </div>, document.getElementById('root')
 );

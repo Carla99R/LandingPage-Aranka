@@ -33,7 +33,7 @@ export default function Home() {
         let canvas = document.createElement('canvas');
         console.log(canvas)
         let width = canvas.width = window.innerWidth;
-        let height = canvas.height = window.innerHeight;
+        let height = canvas.height = window.innerHeight ;
         let segundo_p = document.getElementById('root').getElementsByTagName('div')[0];
         document.getElementById("root").insertBefore(canvas, segundo_p);
         let gl = canvas.getContext('webgl');
@@ -195,8 +195,13 @@ gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
                 <Navbar scroll={scrollState}/>
                 <span className={styles.title}>ARANKA IMPRESORES</span>
             </div>
-            <div id={'info'} style={{width:"100%"}}>
-                 <Info/>
+            <div id={'info'} style={{height:'10%', width:'100%', backgroundColor:'black'}}>
+                <br/>
+                <br/>
+            </div>
+            <div className={styles.endPage}/>
+            <div  style={{width:"100%"}}>
+                <Info/>
              </div>
             <div id={'services'} style={{width:"100%"}}>
                 <Services/>
